@@ -20,7 +20,11 @@ namespace TD2_APIWeb.Controllers
             _context = context;
         }
 
-
+        /// <summary>
+        /// Get all series.
+        /// </summary>
+        /// <returns>Http response</returns>
+        /// <response code="200">When sucess</response>
         // GET: api/Series
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(Serie))]
@@ -29,6 +33,13 @@ namespace TD2_APIWeb.Controllers
             return await _context.Series.ToListAsync();
         }
 
+        /// <summary>
+        /// Get a single currency.
+        /// </summary>
+        /// <returns>Http response</returns>
+        /// <param name="id">The id of the currency</param>
+        /// <response code="200">When the currency id is found</response>
+        /// <response code="404">When the currency id is not found</response>
         // GET: api/Series/5
         [HttpGet("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(Serie))]
@@ -45,6 +56,13 @@ namespace TD2_APIWeb.Controllers
             return serie;
         }
 
+        /// <summary>
+        /// Update an serie.
+        /// </summary>
+        /// <returns>Http response</returns>
+        /// <param name="id">The id of the serie</param>
+        /// <response code="200">When the serie as update</response>
+        /// <response code="404">When the serie is not found </response>
         // PUT: api/Series/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
@@ -78,6 +96,12 @@ namespace TD2_APIWeb.Controllers
             return NoContent();
         }
 
+        /// <summary>
+        /// Add serie.
+        /// </summary>
+        /// <returns>Http response</returns>
+        /// <param name="serie">Object serie</param>
+        /// <response code="200">When the serie added</response>
         // POST: api/Series
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
@@ -91,6 +115,13 @@ namespace TD2_APIWeb.Controllers
             return CreatedAtAction("GetSerie", new { id = serie.Serieid }, serie);
         }
 
+        /// <summary>
+        /// Delete an serie.
+        /// </summary>
+        /// <returns>Http response</returns>
+        /// <param name="id">The id of the serie</param>
+        /// <response code="200">When the serie as deleted</response>
+        /// <response code="404">When the serie are not found</response>
         // DELETE: api/Series/5
         [HttpDelete("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(IActionResult))]
