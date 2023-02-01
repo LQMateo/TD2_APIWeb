@@ -5,6 +5,8 @@ VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TD2_APIWeb", "TD2_APIWeb\TD2_APIWeb.csproj", "{93FDEB41-C375-4336-AAE2-A79599109850}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TD2_APIWebTests", "TD2_APIWebTests\TD2_APIWebTests.csproj", "{B1FEFDD6-976E-46E1-83E8-E6D1B0C944CC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{93FDEB41-C375-4336-AAE2-A79599109850}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93FDEB41-C375-4336-AAE2-A79599109850}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{93FDEB41-C375-4336-AAE2-A79599109850}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1FEFDD6-976E-46E1-83E8-E6D1B0C944CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1FEFDD6-976E-46E1-83E8-E6D1B0C944CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1FEFDD6-976E-46E1-83E8-E6D1B0C944CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1FEFDD6-976E-46E1-83E8-E6D1B0C944CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
